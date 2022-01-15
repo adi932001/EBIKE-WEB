@@ -1,0 +1,357 @@
+.parent {
+    display: flex;
+    padding: 0 0;
+  }
+  
+  .boxie {
+    width: 100%;
+    height: 160px;
+    background-color: #21242b;
+    opacity: 0.95;
+    padding: 1rem;
+  }
+  
+  #headerTxt {
+    font-size: 2.4rem;
+    color: #ffd9a0ef;
+    padding: 0.5rem;
+    font-family: "Nunito";
+  }
+  
+  .wave {
+    width: 100%;
+    height: 495px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.75;
+    border-radius: 5px;
+  }
+  
+  .section {
+    padding: 0;
+  }
+  
+  .section-light {
+    background-color: #fff;
+  }
+  
+  .section-dark {
+    background-color: #1c1e24;
+  }
+  
+  .boxie-child {
+    flex: 1;
+  }
+  
+  .boxie-child1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+  }
+  
+  .boxie-child2 {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+  }
+  
+  .card {
+    width: 95%;
+    height: auto;
+    margin: 15% auto;
+    border-radius: 10px;
+  }
+  
+  .card-light {
+    background-color: #e7e7e7;
+    box-shadow: 5px 5px 15px #888888, -5px -5px 15px #ffffff;
+  }
+  
+  .card-dark {
+    color: whitesmoke;
+    background-color: #1c1e24;
+  }
+  
+  .box-heading {
+    padding: 20px 0;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    text-align: center !important;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .motive {
+    text-align: center;
+    color: #f8fcff;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    /* font-family: "Nunito", sans-serif;
+      letter-spacing: 1.3px; */
+  }
+  
+  .boxie-info {
+    text-align: center;
+    color: #f8fcff;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    /* font-family: "Nunito", sans-serif;
+      letter-spacing: 1.3px; */
+  }
+  
+  @keyframes imgAnimate {
+    0% {
+      transform: translate3d(-20%, 0, 0);
+    }
+    100% {
+      transform: translateZ(0);
+    }
+  }
+  
+  .login-image {
+    animation: imgAnimate 0.8s ease-in-out;
+  }
+  
+  @keyframes titleAnimate {
+    0% {
+      font-size: 2.5rem;
+      transform: translate3d(10%, 0, 0);
+    }
+    100% {
+      font-size: 2.5rem;
+      transform: translateZ(0);
+    }
+  }
+  
+  @keyframes motiveAnimate {
+    0% {
+      font-size: 1.4rem;
+      transform: translate3d(0, 50%, 0);
+    }
+    100% {
+      font-size: 1.4rem;
+      transform: translateZ(0);
+    }
+  }
+  
+  .box-heading {
+    animation: titleAnimate 0.8s ease-in-out;
+  }
+  
+  .motive {
+    animation: motiveAnimate 1s ease-in-out;
+  }
+  
+  .box-heading-light {
+    color: var(--secondary-color);
+  }
+  
+  .box-sub-heading {
+    font-family: "Nunito", sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  
+  .box-heading-dark {
+    color: #fff;
+  }
+  
+  .cardWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0px;
+    padding: 60px;
+    margin: 0 400px;
+    background-clip: border-box;
+    background-color: #363d4a;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 8px;
+    /* box-shadow: 0px 3px 15px rgb(72 127 255 / 40%); */
+    border-collapse: separate;
+  }
+  
+  .cardWrapper:hover {
+    background: linear-gradient(45deg, rgb(55, 62, 75) 0%, rgb(33, 35, 43) 90%);
+  }
+  
+  .imgWrapper {
+    position: absolute;
+    top: -50%;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+  }
+  
+  .info-styles {
+    color: #b4bfff;
+    margin-bottom: 0px;
+    box-sizing: inherit;
+    display: block;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 25px;
+    /* font-size: 20px; */
+  }
+  
+  .discordLink {
+    height: 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background-image: linear-gradient(
+      transparent 50%,
+      rgba(248, 169, 49, 0.815) 0px
+    );
+    padding-right: 4px;
+    padding-bottom: 2px;
+    background-position: 4px 2px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    transition: all 0.18s ease 0s;
+    display: inline-block;
+  }
+  
+  .discordLink:hover {
+    background-position: right -4px top 7px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    background-image: linear-gradient(transparent 60%, rgb(249, 157, 120) 0px);
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .cardWrapper {
+      padding: 35px;
+      margin: 0px;
+    }
+    #makeResp {
+      margin-top: -50px;
+      padding: 15px 15px;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .parent {
+      display: block;
+      width: 100%;
+    }
+  
+    .card {
+      width: 100%;
+      margin: 1% auto;
+    }
+  
+    .boxie {
+      width: 100%;
+      height: 120px;
+      background-color: #1c1e24;
+      opacity: 0.85;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .box-heading {
+      font-size: 1.25rem;
+      padding: 0.5rem 1rem;
+      margin: 0;
+    }
+  
+    .motive {
+      font-size: 0.85rem;
+    }
+  
+    #tagline {
+      font-size: 1rem;
+      padding: 5px 27px;
+      text-align: center;
+    }
+  
+    #headerTxt {
+      font-size: 2rem;
+      padding: 0.5rem;
+    }
+  
+    #headerInfo {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .taglineDiv {
+      flex-wrap: wrap;
+      padding: 15px;
+    }
+  
+    .tagline-icons {
+      padding: 15px;
+      font-size: 2.3rem;
+      margin: 2px;
+    }
+  
+    .boxie-info {
+      font-size: 0.85rem;
+    }
+  
+    .box-sub-heading {
+      font-size: 1.25rem;
+    }
+  
+    .boxie-child1 {
+      padding: 0;
+    }
+  
+    @keyframes imgAnimate {
+      0% {
+        transform: translate3d(20%, 0, 0);
+      }
+      100% {
+        transform: translateZ(0);
+      }
+    }
+  
+    .login-image {
+      animation: imgAnimate 0.8s ease-in-out;
+      height:50%;
+    }
+  
+    @keyframes titleAnimate {
+      0% {
+        font-size: 1.25rem;
+        transform: translate3d(-10%, 0, 0);
+      }
+      100% {
+        font-size: 1.25rem;
+        transform: translateZ(0);
+      }
+    }
+  
+    .box-heading {
+      animation: titleAnimate 0.8s ease-in-out;
+    }
+  
+    @keyframes motiveAnimate {
+      0% {
+        font-size: 0.85rem;
+        transform: translate3d(0, 50%, 0);
+      }
+      100% {
+        font-size: 0.85rem;
+        transform: translateZ(0);
+      }
+    }
+    .motive {
+      animation: motiveAnimate 1s ease-in-out;
+    }
+  }
+  @media screen and (max-width: 1296px) {
+    .wave {
+      display: none;
+    }
+  }
